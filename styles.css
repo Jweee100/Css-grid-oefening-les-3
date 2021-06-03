@@ -1,33 +1,91 @@
 
 .container {
+    background-color: white;
+    color: white;
+    font-size: larger;
+    display: grid;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 210px 100px auto 50px;
+    grid-template-areas:
+            "item-a item-c item-c"
+            "item-b item-c item-c"
+            "item-b item-e item-d"
+            "item-b item-e item-leeg"
+            "item-f item-f item-f";
+
 
 }
 
 #item-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA3B46;
+    grid-area: item-a;
 
 }
 
 #item-b {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA3B46;
+    grid-area: item-b;
 }
 
 #item-c {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA3B46;
+    grid-area: item-c;
 }
 
 #item-d {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA3B46;
+    grid-area: item-d;
 }
 
 #item-e {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA3B46;
+    grid-area: item-e;
 }
 
 #item-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BA3B46;
+    grid-area: item-f;
 
 }
 
 #item-leeg {
+    display: none;
+    grid-area: item-leeg;
 
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+        grid-template-areas:
+            "item-a"
+            "item-b"
+            "item-c"
+            "item-d"
+            "item-e"
+            "item-leeg"
+            "item-f";
+    }
 }
 
