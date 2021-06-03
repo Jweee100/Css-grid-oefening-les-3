@@ -12,7 +12,7 @@
             "item-a item-c item-c"
             "item-b item-c item-c"
             "item-b item-e item-d"
-            "item-b item-e item-leeg"
+            "item-b item-e ."
             "item-f item-f item-f";
 
 
@@ -65,13 +65,6 @@
     align-items: center;
     background-color: #BA3B46;
     grid-area: item-f;
-
-}
-
-#item-leeg {
-    display: none;
-    grid-area: item-leeg;
-
 }
 
 @media screen and (max-width: 576px) {
@@ -84,7 +77,7 @@
             "item-c"
             "item-d"
             "item-e"
-            "item-leeg"
+            "."
             "item-f";
     }
 }
