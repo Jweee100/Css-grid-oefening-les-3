@@ -1,8 +1,13 @@
+:root {
+    --item-bg-color: #BA3B46;
+}
 
-.container {
-    background-color: white;
+body {
     color: white;
     font-size: larger;
+}
+
+.container {
     display: grid;
     column-gap: 16px;
     row-gap: 16px;
@@ -16,51 +21,34 @@
             "item-f item-f item-f";
 }
 
-#item-a {
+.item {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #BA3B46;
+    background-color: var(--item-bg-color);
+}
+
+#item-a {
     grid-area: item-a;
 }
 
 #item-b {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #BA3B46;
     grid-area: item-b;
 }
 
 #item-c {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #BA3B46;
     grid-area: item-c;
 }
 
 #item-d {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #BA3B46;
     grid-area: item-d;
 }
 
 #item-e {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #BA3B46;
     grid-area: item-e;
 }
 
 #item-f {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #BA3B46;
     grid-area: item-f;
 }
 
